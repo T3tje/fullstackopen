@@ -1,0 +1,13 @@
+note over browser:
+
+by executing the js code
+browser adds note to the 
+note array and re-
+renders it to the page
+
+then browser sends 
+new note as .JSON 
+to server
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa

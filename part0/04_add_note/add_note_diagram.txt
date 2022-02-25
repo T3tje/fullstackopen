@@ -1,0 +1,25 @@
+title submit a note
+
+
+note over Browser: Browser sends note content to server
+
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+
+note over Server: Server adds note to notes
+
+Server->Browser: Satus Code 302
+
+note over Browser: Code 302 leads to new request
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+Server->Browser: HTML-Code
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server->Browser: main.css
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+Server->Browser: main.js
+
+note over Browser: Browser executes js code -> json file request
+
+Browser->Server: https://studies.cs.helsinki.fi/exampleapp/data.json
+Server->Browser: [{"content":"","date":"2021-11-17T16:44:54.582Z"},{...]
+note over Browser: Browser executes the eventhandler and renders the content to site
+

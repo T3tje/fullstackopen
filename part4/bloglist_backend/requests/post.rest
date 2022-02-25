@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs/
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1pc1RhIiwiaWQiOiI2MWZlM2FkNTI3MzZjNDFmZDg5NDUxMTciLCJpYXQiOjE2NDQyMTg1ODh9.YET2x8CAsHs1IAXrOyItkAdCRnYaiw4n55AwFo0IgrY
+
+{
+    "title": "Test123",
+    "author": "Tetje Drewke",
+    "url": "www.www.ww",
+    "likes": 1
+}
